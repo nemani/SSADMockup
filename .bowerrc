@@ -1,0 +1,7 @@
+{
+	"proxy": "http://proxy.iiit.ac.in:8080",
+	"https-proxy": "https://proxy.iiit.ac.in:8080",
+	"strict-ssl": false,
+	"registry": "http://bower.herokuapp.com"
+
+}
