@@ -74,42 +74,42 @@ function MyMorris(ykeys_arg, color) {
         resize: true
     });
 
-    // Morris.Bar({
-    //     element: 'morris-bar-chart',
-    //     data: [{
-    //         y: '2006',
-    //         a: 100,
-    //         b: 90
-    //     }, {
-    //         y: '2007',
-    //         a: 75,
-    //         b: 65
-    //     }, {
-    //         y: '2008',
-    //         a: 50,
-    //         b: 40
-    //     }, {
-    //         y: '2009',
-    //         a: 75,
-    //         b: 65
-    //     }, {
-    //         y: '2016',
-    //         a: 50,
-    //         b: 40
-    //     }, {
-    //         y: '2017',
-    //         a: 75,
-    //         b: 65
-    //     }, {
-    //         y: '2018',
-    //         a: 100,
-    //         b: 90
-    //     }],
-    //     xkey: 'y',
-    //     ykeys: ['a', 'b'],
-    //     labels: ['Series A', 'Series B'],
-    //     hideHover: 'auto',
-    //     resize: true
-    // });
+    Morris.Bar({
+        element: 'morris-bar-chart',
+        data: [{
+            y: '2006',
+            a: 100,
+            b: 90
+        }, {
+            y: '2007',
+            a: 75,
+            b: 65
+        }, {
+            y: '2008',
+            a: 50,
+            b: 40
+        }, {
+            y: '2009',
+            a: 75,
+            b: 65
+        }, {
+            y: '2016',
+            a: 50,
+            b: 40
+        }, {
+            y: '2017',
+            a: 75,
+            b: 65
+        }, {
+            y: '2018',
+            a: 100,
+            b: 90
+        }],
+        xkey: 'y',
+        ykeys: ['a', 'b'],
+        labels: ['Series A', 'Series B'],
+        hideHover: 'auto',
+        resize: true
+    });
     
 };
