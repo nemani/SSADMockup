@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MarketFront UI Mockup</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <style type="text/css">
+    .focus {
+        background-color: #777;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .selected {
+        background-color: #777;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+</style>
+<div id="wrapper">
+
+    <!-- NAVBAR -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><strong>MarketFront</strong></a>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Study For SSAD MID 2</strong>
+                                        <span class="pull-right text-muted">100% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                            <span class="sr-only">100% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Implement Demo</strong>
+                                        <span class="pull-right text-muted">20% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Make PPT for R1</strong>
+                                        <span class="pull-right text-muted">90% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                            <span class="sr-only">90% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Complete PT</strong>
+                                        <span class="pull-right text-muted">10% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                            <span class="sr-only">10% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Present at R1</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <strong>
+                    IIIT, Hyderabad
+                </strong>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <strong>Hello, Raghu</strong> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="construction.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="construction.html"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+
+            <!-- SIDEBAR -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Listings<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="listing_overview.html">Listing Overview</a>
+                                </li>
+                                <li>
+                                    <a href="construction.html">Product Listings</a>
+                                </li>
+                                <li>
+                                    <a href="construction.html">Unlisted Products</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="construction.html"><i class="fa fa-table fa-fw"></i> Catalog</a>
+                        </li>
+                        <li>
+                            <a href="construction.html"><i class="fa fa-edit fa-fw"></i> Orders</a>
+                        </li>
+                        <li>
+                            <a href="construction.html"><i class="fa fa-list fa-fw"></i> Inventory</span></a>
+                        </li>
+                        <li>
+                            <a href="construction.html"><i class="fa fa-dollar fa-fw"></i> Pricing</a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="construction.html"><i class="fa fa-phone fa-fw"></i> Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <br>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="listing_overview.html">Listing</a></li>
+                        <li class="breadcrumb-item active">Unlisted Products</li>
+                    </ol>
+                    <h1 class="page-header">Unlisted Products</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#Physical">Physical</a></li>
+                    <li><a data-toggle="tab" href="#Amazon">Amazon</a></li>
+                    <li><a data-toggle="tab" href="#Paytm">Paytm</a></li>
+                    <li><a data-toggle="tab" href="#Ebay">Ebay</a></li>
+                    <li><a data-toggle="tab" href="#Flipkart">Flipkart</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="Physical" class="tab-pane fade in active">
+                        <h3>Physical</h3>
+                        <table class="table table-condensed table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Seller SKU</th>
+                                    <th>ASIN</th>
+                                    <th>Qty</th>
+                                    <th>Selling Price</th>
+                                    <th>Status</th>
+                                    <th>Last 30 Days</th>
+                                    <th>Stock Cover</th>
+                                    <th>Action</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">0200000000349</a></td>
+                                    <td>B0000AP4RQ</td>
+                                    <td>150</td>
+                                    <td>8000</td>
+                                    <td>Enabled</td>
+                                    <td>74</td>
+                                    <td>50</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0200000001249</a></td>
+                                    <td>B0000BQ33Q</td>
+                                    <td>3500</td>
+                                    <td>80</td>
+                                    <td>Enabled</td>
+                                    <td>714</td>
+                                    <td>500</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0304400001249</a></td>
+                                    <td>D0000AV37D</td>
+                                    <td>300</td>
+                                    <td>6499</td>
+                                    <td>Disabled</td>
+                                    <td>50</td>
+                                    <td>100</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0300000069696</a></td>
+                                    <td>L9190AC28D</td>
+                                    <td>30</td>
+                                    <td>64999</td>
+                                    <td>Enabled</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">4400000006006</a></td>
+                                    <td>04OOOIAL90</td>
+                                    <td>5000</td>
+                                    <td>99</td>
+                                    <td>Disabled</td>
+                                    <td>3597</td>
+                                    <td>1152</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <ul class="pagination pull-right" style="margin-right: 50px">
+                            <li class="active"><a>5</a></li>
+                            <li><a>10</a></li>
+                            <li><a>25</a></li>
+                            <li><a>50</a></li>
+                            <li><a>100</a></li>
+                        </ul>
+
+                        <ul class="pagination">
+                            <li><a>«</a></li>
+                            <li class="active"><a>1</a></li>
+                            <li><a>2</a></li>
+                            <li><a>3</a></li>
+                            <li><a>4</a></li>
+                            <li><a>5</a></li>
+                            <li><a>»</a></li>
+                        </ul>
+                    </div>
+                    <div id="Amazon" class="tab-pane fade">
+                        <h3>Amazon</h3>
+                        <table class="table table-condensed table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Seller SKU</th>
+                                    <th>ASIN</th>
+                                    <th>Qty</th>
+                                    <th>Selling Price</th>
+                                    <th>Status</th>
+                                    <th>Last 30 Days</th>
+                                    <th>Stock Cover</th>
+                                    <th>Action</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">0200000000349</a></td>
+                                    <td>B0000AP4RQ</td>
+                                    <td>150</td>
+                                    <td>8000</td>
+                                    <td>Enabled</td>
+                                    <td>74</td>
+                                    <td>50</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0200000001249</a></td>
+                                    <td>B0000BQ33Q</td>
+                                    <td>3500</td>
+                                    <td>80</td>
+                                    <td>Enabled</td>
+                                    <td>714</td>
+                                    <td>500</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0304400001249</a></td>
+                                    <td>D0000AV37D</td>
+                                    <td>300</td>
+                                    <td>6499</td>
+                                    <td>Disabled</td>
+                                    <td>50</td>
+                                    <td>100</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0300000069696</a></td>
+                                    <td>L9190AC28D</td>
+                                    <td>30</td>
+                                    <td>64999</td>
+                                    <td>Enabled</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">4400000006006</a></td>
+                                    <td>04OOOIAL90</td>
+                                    <td>5000</td>
+                                    <td>99</td>
+                                    <td>Disabled</td>
+                                    <td>3597</td>
+                                    <td>1152</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <ul class="pagination pull-right" style="margin-right: 50px">
+                            <li class="active"><a>5</a></li>
+                            <li><a>10</a></li>
+                            <li><a>25</a></li>
+                            <li><a>50</a></li>
+                            <li><a>100</a></li>
+                        </ul>
+
+                        <ul class="pagination">
+                            <li><a>«</a></li>
+                            <li class="active"><a>1</a></li>
+                            <li><a>2</a></li>
+                            <li><a>3</a></li>
+                            <li><a>4</a></li>
+                            <li><a>5</a></li>
+                            <li><a>»</a></li>
+                        </ul>
+
+                    </div>
+                    <div id="Paytm" class="tab-pane fade">
+                        <h3>Paytm</h3>
+                        <table class="table table-condensed table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Seller SKU</th>
+                                    <th>ASIN</th>
+                                    <th>Qty</th>
+                                    <th>Selling Price</th>
+                                    <th>Status</th>
+                                    <th>Last 30 Days</th>
+                                    <th>Stock Cover</th>
+                                    <th>Action</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">0200000000349</a></td>
+                                    <td>B0000AP4RQ</td>
+                                    <td>150</td>
+                                    <td>8000</td>
+                                    <td>Enabled</td>
+                                    <td>74</td>
+                                    <td>50</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0200000001249</a></td>
+                                    <td>B0000BQ33Q</td>
+                                    <td>3500</td>
+                                    <td>80</td>
+                                    <td>Enabled</td>
+                                    <td>714</td>
+                                    <td>500</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0304400001249</a></td>
+                                    <td>D0000AV37D</td>
+                                    <td>300</td>
+                                    <td>6499</td>
+                                    <td>Disabled</td>
+                                    <td>50</td>
+                                    <td>100</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0300000069696</a></td>
+                                    <td>L9190AC28D</td>
+                                    <td>30</td>
+                                    <td>64999</td>
+                                    <td>Enabled</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">4400000006006</a></td>
+                                    <td>04OOOIAL90</td>
+                                    <td>5000</td>
+                                    <td>99</td>
+                                    <td>Disabled</td>
+                                    <td>3597</td>
+                                    <td>1152</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <ul class="pagination pull-right" style="margin-right: 50px">
+                            <li class="active"><a>5</a></li>
+                            <li><a>10</a></li>
+                            <li><a>25</a></li>
+                            <li><a>50</a></li>
+                            <li><a>100</a></li>
+                        </ul>
+
+                        <ul class="pagination">
+                            <li><a>«</a></li>
+                            <li class="active"><a>1</a></li>
+                            <li><a>2</a></li>
+                            <li><a>3</a></li>
+                            <li><a>4</a></li>
+                            <li><a>5</a></li>
+                            <li><a>»</a></li>
+                        </ul>
+
+                    </div>
+                    <div id="Ebay" class="tab-pane fade">
+                        <h3>Ebay</h3>
+                        <table class="table table-condensed table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Seller SKU</th>
+                                    <th>ASIN</th>
+                                    <th>Qty</th>
+                                    <th>Selling Price</th>
+                                    <th>Status</th>
+                                    <th>Last 30 Days</th>
+                                    <th>Stock Cover</th>
+                                    <th>Action</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">0200000000349</a></td>
+                                    <td>B0000AP4RQ</td>
+                                    <td>150</td>
+                                    <td>8000</td>
+                                    <td>Enabled</td>
+                                    <td>74</td>
+                                    <td>50</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0200000001249</a></td>
+                                    <td>B0000BQ33Q</td>
+                                    <td>3500</td>
+                                    <td>80</td>
+                                    <td>Enabled</td>
+                                    <td>714</td>
+                                    <td>500</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0304400001249</a></td>
+                                    <td>D0000AV37D</td>
+                                    <td>300</td>
+                                    <td>6499</td>
+                                    <td>Disabled</td>
+                                    <td>50</td>
+                                    <td>100</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0300000069696</a></td>
+                                    <td>L9190AC28D</td>
+                                    <td>30</td>
+                                    <td>64999</td>
+                                    <td>Enabled</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">4400000006006</a></td>
+                                    <td>04OOOIAL90</td>
+                                    <td>5000</td>
+                                    <td>99</td>
+                                    <td>Disabled</td>
+                                    <td>3597</td>
+                                    <td>1152</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <ul class="pagination pull-right" style="margin-right: 50px">
+                            <li class="active"><a>5</a></li>
+                            <li><a>10</a></li>
+                            <li><a>25</a></li>
+                            <li><a>50</a></li>
+                            <li><a>100</a></li>
+                        </ul>
+
+                        <ul class="pagination">
+                            <li><a>«</a></li>
+                            <li class="active"><a>1</a></li>
+                            <li><a>2</a></li>
+                            <li><a>3</a></li>
+                            <li><a>4</a></li>
+                            <li><a>5</a></li>
+                            <li><a>»</a></li>
+                        </ul>
+
+                    </div>
+                    <div id="Flipkart" class="tab-pane fade">
+                        <h3>Flipkart</h3>
+                        <table class="table table-condensed table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Seller SKU</th>
+                                    <th>ASIN</th>
+                                    <th>Qty</th>
+                                    <th>Selling Price</th>
+                                    <th>Status</th>
+                                    <th>Last 30 Days</th>
+                                    <th>Stock Cover</th>
+                                    <th>Action</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">0200000000349</a></td>
+                                    <td>B0000AP4RQ</td>
+                                    <td>150</td>
+                                    <td>8000</td>
+                                    <td>Enabled</td>
+                                    <td>74</td>
+                                    <td>50</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0200000001249</a></td>
+                                    <td>B0000BQ33Q</td>
+                                    <td>3500</td>
+                                    <td>80</td>
+                                    <td>Enabled</td>
+                                    <td>714</td>
+                                    <td>500</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0304400001249</a></td>
+                                    <td>D0000AV37D</td>
+                                    <td>300</td>
+                                    <td>6499</td>
+                                    <td>Disabled</td>
+                                    <td>50</td>
+                                    <td>100</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0300000069696</a></td>
+                                    <td>L9190AC28D</td>
+                                    <td>30</td>
+                                    <td>64999</td>
+                                    <td>Enabled</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">4400000006006</a></td>
+                                    <td>04OOOIAL90</td>
+                                    <td>5000</td>
+                                    <td>99</td>
+                                    <td>Disabled</td>
+                                    <td>3597</td>
+                                    <td>1152</td>
+                                    <td><a href="#">Analyse</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <ul class="pagination pull-right" style="margin-right: 50px">
+                            <li class="active"><a>5</a></li>
+                            <li><a>10</a></li>
+                            <li><a>25</a></li>
+                            <li><a>50</a></li>
+                            <li><a>100</a></li>
+                        </ul>
+
+                        <ul class="pagination">
+                            <li><a>«</a></li>
+                            <li class="active"><a>1</a></li>
+                            <li><a>2</a></li>
+                            <li><a>3</a></li>
+                            <li><a>4</a></li>
+                            <li><a>5</a></li>
+                            <li><a>»</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /#wrapper -->
+        <!-- jQuery -->
+        <script src="../vendor/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+        <!-- Morris Charts JavaScript -->
+        <script src="../vendor/raphael/raphael.min.js"></script>
+        <script src="../vendor/morrisjs/morris.min.js"></script>
+        <script src="../data/morris-data.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="../dist/js/sb-admin-2.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('th').each(function(col) {
+                    $(this).hover(
+                        function() {
+                            $(this).addClass('focus');
+                        },
+                        function() {
+                            $(this).removeClass('focus');
+                        }
+                        );
+
+
+                    $(this).click(function() {
+                        if ($(this).is('.asc')) {
+                            $(this).removeClass('asc');
+                            $(this).addClass('desc selected');
+                            sortOrder = -1;
+                        } else {
+                            $(this).addClass('asc selected');
+                            $(this).removeClass('desc');
+                            sortOrder = 1;
+                        }
+                        $(this).siblings().removeClass('asc selected');
+                        $(this).siblings().removeClass('desc selected');
+                        var curTable = $(this).parent().parent().parent();
+                        var arrData = curTable.find('tbody >tr:has(td)').get();
+
+                        arrData.sort(function(a, b) {
+                            col = col % 8;
+                            var val1 = $(a).children('td').eq(col).text().toUpperCase();
+                            var val2 = $(b).children('td').eq(col).text().toUpperCase();
+                            // console.log(val1);
+                            // console.log(val2);
+                            if ($.isNumeric(val1) && $.isNumeric(val2)){
+                                return sortOrder == 1 ? val1 - val2 : val2 - val1;
+                            }
+                            else
+                                return (val1 < val2) ? -sortOrder : (val1 > val2) ? sortOrder : 0;
+                        });
+
+                        $.each(arrData, function(index, row) {
+                            curTable.find('tbody').append(row);
+
+                        });
+                    });
+                });
+            });
+        </script>
+    </body>
+    </html>
