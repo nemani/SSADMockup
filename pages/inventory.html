@@ -236,7 +236,7 @@
                                     <a href="product_listing.html">Product Listings</a>
                                 </li>
                                 <li>
-                                    <a href="unlisted_prodcuts.html">Unlisted Products<</a>
+                                    <a href="unlisted_products.html">Unlisted Products</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -311,7 +311,7 @@
                                     <th>Action</th>
                                 </tr> 
                             </thead>
-                            <tbody>
+                            <tbody class="change_num_body">
                                 <tr>
                                     <td><a href="#">0200000000349</a></td>
                                     <td>Star Wars Band</td>
@@ -356,9 +356,8 @@
                         </table>
 
                         <ul class="pagination pull-right" style="margin-right: 50px">
-                            <li class="active"><a>5</a></li>
-                            <li><a>10</a></li>
-                            <li><a>25</a></li>
+                            <li id="old_num_change" class="active"><a>5</a></li>
+                            <li id="num_change"><a>10</a></li><li><a>25</a></li>
                             <li><a>50</a></li>
                             <li><a>100</a></li>
                         </ul>
@@ -397,7 +396,7 @@
                                     <th>Action</th>
                                 </tr> 
                             </thead>
-                            <tbody>
+                            <tbody class="change_num_body">
                                 <tr>
                                     <td><a href="#">0200000000349</a></td>
                                     <td>Star Wars Band</td>
@@ -442,9 +441,8 @@
                         </table>
 
                         <ul class="pagination pull-right" style="margin-right: 50px">
-                            <li class="active"><a>5</a></li>
-                            <li><a>10</a></li>
-                            <li><a>25</a></li>
+                            <li id="old_num_change" class="active"><a>5</a></li>
+                            <li id="num_change"><a>10</a></li><li><a>25</a></li>
                             <li><a>50</a></li>
                             <li><a>100</a></li>
                         </ul>
@@ -484,7 +482,7 @@
                                     <th>Action</th>
                                 </tr> 
                             </thead>
-                            <tbody>
+                            <tbody class="change_num_body">
                                 <tr>
                                     <td><a href="#">0200000000349</a></td>
                                     <td>Star Wars Band</td>
@@ -529,8 +527,8 @@
                         </table>
 
                         <ul class="pagination pull-right" style="margin-right: 50px">
-                            <li class="active"><a>5</a></li>
-                            <li><a>10</a></li>
+                            <li id="old_num_change" class="active"><a>5</a></li>
+                            <li id="num_change"><a>10</a></li>
                             <li><a>25</a></li>
                             <li><a>50</a></li>
                             <li><a>100</a></li>
@@ -571,7 +569,7 @@
                                     <th>Action</th>
                                 </tr> 
                             </thead>
-                            <tbody>
+                            <tbody class="change_num_body">
                                 <tr>
                                     <td><a href="#">0200000000349</a></td>
                                     <td>Star Wars Band</td>
@@ -616,9 +614,8 @@
                         </table>
 
                         <ul class="pagination pull-right" style="margin-right: 50px">
-                            <li class="active"><a>5</a></li>
-                            <li><a>10</a></li>
-                            <li><a>25</a></li>
+                            <li id="old_num_change" class="active"><a>5</a></li>
+                            <li id="num_change"><a>10</a></li><li><a>25</a></li>
                             <li><a>50</a></li>
                             <li><a>100</a></li>
                         </ul>
@@ -658,7 +655,7 @@
                                     <th>Action</th>
                                 </tr> 
                             </thead>
-                            <tbody>
+                            <tbody class="change_num_body">
                                 <tr>
                                     <td><a href="#">0200000000349</a></td>
                                     <td>Star Wars Band</td>
@@ -703,9 +700,8 @@
                         </table>
 
                         <ul class="pagination pull-right" style="margin-right: 50px">
-                            <li class="active"><a>5</a></li>
-                            <li><a>10</a></li>
-                            <li><a>25</a></li>
+                            <li id="old_num_change" class="active"><a>5</a></li>
+                            <li id="num_change"><a>10</a></li><li><a>25</a></li>
                             <li><a>50</a></li>
                             <li><a>100</a></li>
                         </ul>
@@ -742,6 +738,56 @@
         <script src="../dist/js/sb-admin-2.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
+                console.log("loaded")
+                console.log($("#num_change"));
+                $("#num_change").click(function(){
+
+                    console.log("clicked")
+                    $("#num_change").addClass("active");
+                    $("#old_num_change").removeClass("active");
+                    console.log($(".change_num_body"))
+                    $(".change_num_body").append(`
+                                <tr>
+                                    <td><a href="#">0200000000349</a></td>
+                                    <td>Star Wars Band</td>
+                                    <td>SW Enterprises</td>
+                                    <td>74</td>
+                                    <td>50</td>
+                                    <td><a href="#">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0200000001249</a></td>
+                                    <td>Sphero2</td>
+                                    <td>Sphero</td>
+                                    <td>714</td>
+                                    <td>500</td>
+                                    <td><a href="#">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0304400001249</a></td>
+                                    <td>Sony Headphones</td>
+                                    <td>Sony</td>
+                                    <td>50</td>
+                                    <td>100</td>
+                                    <td><a href="#">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">0300000069696</a></td>
+                                    <td>Sony Xperia Z3</td>
+                                    <td>Sony</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td><a href="#">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">4400000006006</a></td>
+                                    <td>Electric Iron</td>
+                                    <td>Usha</td>
+                                    <td>3597</td>
+                                    <td>1152</td>
+                                    <td><a href="#">Edit</a></td>
+                                </tr>`);
+                });
                 $('th').each(function(col) {
                     $(this).hover(
                         function() {
