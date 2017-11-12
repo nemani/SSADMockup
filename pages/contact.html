@@ -38,34 +38,34 @@
 <body>
     <style type="text/css">
     .focus {
-      background-color: #777;
-      color: #fff;
-      cursor: pointer;
-      font-weight: bold;
-  }
+        background-color: #777;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+    }
 
-  .selected {
-      background-color: #777;
-      color: #fff;
-      font-weight: bold;
-  }
+    .selected {
+        background-color: #777;
+        color: #fff;
+        font-weight: bold;
+    }
 
-  table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-  }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
 
-  td,
-  th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-  }
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
 
-  tr:nth-child(even) {
-      background-color: #dddddd;
-  }
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
 
 </style>
 <div id="wrapper">
@@ -207,8 +207,6 @@
 
 
 
-            
-
             <!-- SIDEBAR -->
 
             <div class="navbar-default sidebar" role="navigation">
@@ -238,7 +236,7 @@
                                     <a href="product_listing.html">Product Listings</a>
                                 </li>
                                 <li>
-                                    <a href="unlisted_products.html">Unlisted Products</a>
+                                    <a href="unlisted_prodcuts.html">Unlisted Products<</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -271,263 +269,76 @@
                 <div class="col-lg-12">
                     <br>
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item"><a href="#">Listing</a></li>
-                      <li class="breadcrumb-item active">Listing Overview</li>
-                  </ol>
-                  <h1 class="page-header">Listing Overview</h1>
-              </div>
-              <!-- /.col-lg-12 -->
-          </div>
-          <!-- /.row -->
-          <div class="row">
-
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Listings Chart
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        <div id="morris-bar-chart"></div>
-                    </div>
-                    <!-- /.panel-body -->
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="#orders.html">Contact Us</a></li>
+                    </ol>
+                    <h1 class="page-header">Contact Us</h1>
                 </div>
-                <!-- /.panel -->
+                <!-- /.col-lg-12 -->
             </div>
-            <table class="table table-condensed table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th>
-                            <div>
-                                <span>
-                                    MarketPlace
-                                </span>
-                            </div> 
-                        </th>
-                        <th>
-                            <div>
-                                <span>
-                                    Total Listings
-                                </span>
-                            </div> 
-                        </th>
-                        <th>
-                            <div>
-                                <span>
-                                    Not Listed Items
-                                </span>
-                            </div> 
-                        </th>
-                        <th>
-                            <div>
-                                <span>
-                                    Active Listings
-                                </span>
-                            </div> 
-                        </th>
-                        <th>
-                            <div>
-                                <span>
-                                    Inactive Listings
-                                </span>
-                            </div> 
-                        </th>
-                        <th>
-                            <div>
-                                <span>
-                                    Active Listings with Quantity
-                                </span>
-                            </div> 
-                        </th>
-                        <th>
-                            <div>
-                                <span>
-                                    Inactive Listings with Quantity
-                                </span>
-                            </div> 
-                        </th>
-                        <th>
-                            <div>
-                                <span>
-                                    Run Date
-                                </span>
-                            </div> 
-                        </th>
-                    </tr> 
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div>Physical</div>
-                        </td>
-                        <td>
-                            <div>34949</div>
-                        </td>
-                        <td>
-                            <div>0</div>
-                        </td>
-                        <td>
-                            <div>34949</div>
-                        </td>
-                        <td>
-                            <div>0</div>
-                        </td>
-                        <td>
-                            <div>3175</div>
-                        </td>
-                        <td>
-                            <div>0</div>
-                        </td>
-                        <td>
-                            <div>2017-03-13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>Amazon</div>
-                        </td>
-                        <td>
-                            <div>22003</div>
-                        </td>
-                        <td>
-                            <div>1355</div>
-                        </td>
-                        <td>
-                            <div>22003</div>
-                        </td>
-                        <td>
-                            <div>0</div>
-                        </td>
-                        <td>
-                            <div>3956</div>
-                        </td>
-                        <td>
-                            <div>0</div>
-                        </td>
-                        <td>
-                            <div>2017-03-13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>Ebay</div>
-                        </td>
-                        <td>
-                            <div>3103</div>
-                        </td>
-                        <td>
-                            <div>3694</div>
-                        </td>
-                        <td>
-                            <div>3103</div>
-                        </td>
-                        <td>
-                            <div>0</div>
-                        </td>
-                        <td>
-                            <div>3103</div>
-                        </td>
-                        <td>
-                            <div>0</div>
-                        </td>
-                        <td>
-                            <div>2017-03-13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>Paytm</div>
-                        </td>
-                        <td>
-                            <div>8702</div>
-                        </td>
-                        <td>
-                            <div>3670</div>
-                        </td>
-                        <td>
-                            <div>8551</div>
-                        </td>
-                        <td>
-                            <div>151</div>
-                        </td>
-                        <td>
-                            <div>1276</div>
-                        </td>
-                        <td>
-                            <div>25</div>
-                        </td>
-                        <td>
-                            <div>2017-03-13</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>Flipkart</div>
-                        </td>
-                        <td>
-                            <div>13128</div>
-                        </td>
-                        <td>
-                            <div>3203</div>
-                        </td>
-                        <td>
-                            <div>11995</div>
-                        </td>
-                        <td>
-                            <div>1133</div>
-                        </td>
-                        <td>
-                            <div>1403</div>
-                        </td>
-                        <td>
-                            <div>191</div>
-                        </td>
-                        <td>
-                            <div>2017-03-13</div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- /.row -->
+            <div class="row" style="padding:0 100px 0 0;">
+                <div class="col-lg-6">
+                    <h3>Get in touch with us!</h3>
+                    <p>Feedback, feature suggestions, business enquiries, or just to say "Hello". <br> We would love to hear from you!</p>
+                    <div class="infoblock">
+                      <h4 class="font-accident-one-normal uppercase">&nbsp;</h4>
+                      <div class="connectus">
+                        <p><i class="fa fa-phone"></i>  +91 - 9347335459</p>
+                        <p><i class="fa fa-envelope"></i> info@marketfront.in</p>
+                    </div>
 
-            <ul class="pagination pull-right" style="margin-right: 50px">
-                <li>
-                    <a>10</a>
-                </li>
-                <li>
-                    <a>25</a>
-                </li>
-                <li>
-                    <a>50</a>
-                </li>
-                <li>
-                    <a>100</a>
-                </li>
-            </ul>
+                </div>
+            </div>
 
-            <ul class="pagination">
-                <li>
-                    <a>«</a>
-                </li>
-                <li>
-                    <a>1</a>
-                </li>
-                <li>
-                    <a>2</a>
-                </li>
-                <li>
-                    <a>3</a>
-                </li>
-                <li>
-                    <a>4</a>
-                </li>
-                <li>
-                    <a>5</a>
-                </li>
-                <li>
-                    <a>»</a>
-                </li>
-            </ul>
+            <div class="col-lg-6">
+                <h4>Wanna try? drop us a message</h4>
+                <form name="sentMessage" id="contactForm" novalidate="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name." type="text">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address." type="email">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number." type="tel">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <select name="subject" class="form-control" id="subject" required="" data-validation-required-message="Please select subject">
+                                    <option value="">Subject *</option>
+                                    <option value="marketfront Solution">marketfront Solution</option>
+                                    <option value="Training Services">Training Services</option>
+                                    <option value="Request a free demo">Request a free demo</option>
+                                    <option value="Request a free trial">Request a free trial</option>
+                                    <option value="Business inquiry">Business inquiry</option>
+                                    <option value="Partnership">Partnership</option>
+                                    <option value="Support">Support</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Message *" id="message" required="" data-validation-required-message="Please enter case description." cols="40" rows="4"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-primary">Submit your message</button>
+                                <p style="border-top:1px solid #e7e7e7; margin-top:20px; font-size:13px;padding:5px;">We respect your privacy and will not share, lease or sell your contact information. More on our <a href="privacy_policy.php">privacy policy</a>.</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -549,99 +360,52 @@
     <script src="../dist/js/sb-admin-2.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-          $('th').each(function(col) {
-            $(this).hover(
-              function() {
-                $(this).addClass('focus');
-            },
-            function() {
-                $(this).removeClass('focus');
-            }
-            );
+            $('th').each(function(col) {
+                $(this).hover(
+                    function() {
+                        $(this).addClass('focus');
+                    },
+                    function() {
+                        $(this).removeClass('focus');
+                    }
+                    );
 
 
-            $(this).click(function() {
-              if ($(this).is('.asc')) {
-                $(this).removeClass('asc');
-                $(this).addClass('desc selected');
-                sortOrder = -1;
-            } else {
-                $(this).addClass('asc selected');
-                $(this).removeClass('desc');
-                sortOrder = 1;
-            }
-            $(this).siblings().removeClass('asc selected');
-            $(this).siblings().removeClass('desc selected');
-            var arrData = $('table').find('tbody >tr:has(td)').get();
+                $(this).click(function() {
+                    if ($(this).is('.asc')) {
+                        $(this).removeClass('asc');
+                        $(this).addClass('desc selected');
+                        sortOrder = -1;
+                    } else {
+                        $(this).addClass('asc selected');
+                        $(this).removeClass('desc');
+                        sortOrder = 1;
+                    }
+                    $(this).siblings().removeClass('asc selected');
+                    $(this).siblings().removeClass('desc selected');
+                    var curTable = $(this).parent().parent().parent();
+                    var arrData = curTable.find('tbody >tr:has(td)').get();
 
-            arrData.sort(function(a, b) {
-                var val1 = $(a).children('td').eq(col).text().toUpperCase();
-                var val2 = $(b).children('td').eq(col).text().toUpperCase();
-                if ($.isNumeric(val1) && $.isNumeric(val2))
-                  return sortOrder == 1 ? val1 - val2 : val2 - val1;
-              else
-                  return (val1 < val2) ? -sortOrder : (val1 > val2) ? sortOrder : 0;
-          });
-            $.each(arrData, function(index, row) {
-                $('tbody').append(row);
+                    arrData.sort(function(a, b) {
+                        col = col % 8;
+                        var val1 = $(a).children('td').eq(col).text().toUpperCase();
+                        var val2 = $(b).children('td').eq(col).text().toUpperCase();
+                            // console.log(val1);
+                            // console.log(val2);
+                            if ($.isNumeric(val1) && $.isNumeric(val2)){
+                                return sortOrder == 1 ? val1 - val2 : val2 - val1;
+                            }
+                            else
+                                return (val1 < val2) ? -sortOrder : (val1 > val2) ? sortOrder : 0;
+                        });
+
+                    $.each(arrData, function(index, row) {
+                        curTable.find('tbody').append(row);
+
+                    });
+                });
             });
         });
-        });
-      });
-        Morris.Bar({
-            element: 'morris-bar-chart',
-            data: [{
-                label: "Total Listings",
-                Physical: 34949,
-                Amazon: 22003,
-                Paytm: 8702,
-                Ebay: 3103,
-                Flipkart: 13128,
-            }, {
-                label: "Not Listed Items",
-                Physical: 0,
-                Amazon: 1355,
-                Paytm: 3670,
-                Ebay: 3694,
-                Flipkart: 3203,
-            }, {
-                label: "Active Listings",
-                Physical: 34949,
-                Amazon: 22003,
-                Paytm: 8551,
-                Ebay: 3103,
-                Flipkart: 11995,
-            }, {
-                label: "Inactive Listings",
-                Physical: 0,
-                Amazon: 0,
-                Paytm: 151,
-                Ebay: 0,
-                Flipkart: 1133,
-            }, {
-                label: "Active Listings with Quantity",
-                Physical: 3175,
-                Amazon: 3956,
-                Paytm: 1276,
-                Ebay: 3103,
-                Flipkart: 1403,
-            }, {
-                label: "Inactive Listings with Quantity",
-                Physical: 0,
-                Amazon: 0,
-                Paytm: 25,
-                Ebay: 0,
-                Flipkart: 191,
-            }],
-            xkey: 'label',
-            ykeys: ['Physical', 'Paytm', 'Amazon', 'Ebay', 'Flipkart'],
-            labels: ['Physical', 'Paytm', 'Amazon', 'Ebay', 'Flipkart'],
-            hideHover: 'auto',
-            resize: true
-        });
-
-
     </script>
 </body>
-
 </html>
